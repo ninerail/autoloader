@@ -16,6 +16,10 @@ export class InputFormComponent implements OnInit {
     pronunciation: '',
     video: ''
   }
+  stub = ''
+  time = ''
+  concat = this.stub + this.time;
+
   constructor() { }
 
   ngOnInit() {

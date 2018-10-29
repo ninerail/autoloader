@@ -1,9 +1,14 @@
-<input [(ngModel)]="phrasecard.english" placeholder="English">
-<input [(ngModel)]="phrasecard.arabic" placeholder="Arabic">
-<input [(ngModel)]="phrasecard.pronunciation" placeholder="Pronunciation">
-<input [(ngModel)]="phrasecard.video" placeholder="Video">
+
+<p>English</p>
+<input [(ngModel)]="phrasecard.english"><br>
+<p>Arabic</p>
+<input [(ngModel)]="phrasecard.arabic"  class='arabic'><br>
+<p>Pronunciation</p>
+<input [(ngModel)]="phrasecard.pronunciation"><br>
+<p>Time</p>
+<input [(ngModel)]="time"><br>
+<p>YouTube stub</p>
+<input [(ngModel)]="stub"><br>
+<p>Video</p>
+<input value='{{concat}}'><br>
 <button>Add to stack</button>
-<h2>{{ phrasecard.english }}</h2>
-<h2>{{ phrasecard.arabic }}</h2>
-<h2>{{ phrasecard.pronunciation }}</h2>
-<h2>{{ phrasecard.video }}</h2>
