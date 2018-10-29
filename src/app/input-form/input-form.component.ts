@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { CardlineComponent } from '../cardline/cardline.component';
 import { Phrasecard } from '../phrasecard';
 import { calcBindingFlags } from '@angular/core/src/view/util';
+import { TableComponent } from '../table/table.component'
+
 
 
 
@@ -18,11 +20,9 @@ export class InputFormComponent implements OnInit {
     video: ''
   }
 
-  // calc = {
-  //   stub: 'jo',
-  //   time: 'blow',
-  //   concat: this.calc
-  // }
+  pushToStack(){
+    console.log();
+  }
  
   constructor() { }
 
