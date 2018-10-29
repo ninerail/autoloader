@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CardlineComponent } from '../cardline/cardline.component';
 import { Phrasecard } from '../phrasecard';
+import { calcBindingFlags } from '@angular/core/src/view/util';
 
 
 
@@ -16,10 +17,13 @@ export class InputFormComponent implements OnInit {
     pronunciation: '',
     video: ''
   }
-  stub = ''
-  time = ''
-  concat = this.stub + this.time;
 
+  // calc = {
+  //   stub: 'jo',
+  //   time: 'blow',
+  //   concat: this.calc
+  // }
+ 
   constructor() { }
 
   ngOnInit() {
